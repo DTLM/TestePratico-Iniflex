@@ -93,7 +93,6 @@ public class FuncionarioServiceImple implements IFuncionarioService {
 				.collect(Collectors.toList());
 		funcionariosAux.forEach(fun -> {
 			System.out.println(fun.getNome());
-			System.out.println();
 		});
 	}
 

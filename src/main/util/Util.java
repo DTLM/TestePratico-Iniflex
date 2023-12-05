@@ -24,7 +24,7 @@ public class Util {
 	public static LocalDate StringToLocalDate(String data) {
 		LocalDate dataFormatada = null;
 		if (data.isBlank() == false) {
-			DateTimeFormatter formatters = DateTimeFormatter.ofPattern("d/MM/uuuu");
+			DateTimeFormatter formatters = DateTimeFormatter.ofPattern("dd/MM/uuuu");
 			dataFormatada = LocalDate.parse(data, formatters);
 		}
 		return dataFormatada;
@@ -42,7 +42,7 @@ public class Util {
 		if (valor.isBlank()) {
 			throw new Exception("Salário está nulo ou em branco.");
 		}
-		return BigDecimal.valueOf(new DecimalFormat("#,###.##").parse(valor).doubleValue());
+		return BigDecimal.valueOf(Double.valueOf(valor));
 	}
 
 	public static BigDecimal calcularAumento(BigDecimal salario, BigDecimal aumento) throws AumentoException {

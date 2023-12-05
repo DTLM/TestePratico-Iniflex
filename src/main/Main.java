@@ -44,14 +44,16 @@ public class Main {
 		IFuncionarioService service = new FuncionarioServiceImple();
 		
 		try {
-			Funcionario fun = FuncionarioFactory.createFuncionario("Thales", "22/04/1997", "2015,15", "Adm");
-			Funcionario fun1 = FuncionarioFactory.createFuncionario("João", "25/04/1999", "3000,15", "Programador");
-			Funcionario fun2 = FuncionarioFactory.createFuncionario("Leticia", "22/10/1999", "201,15", "vendedor");
-			Funcionario fun3 = FuncionarioFactory.createFuncionario("rodrigo", "20/03/1999", "205,15", "qa");
-			Funcionario fun4 = FuncionarioFactory.createFuncionario("carla", "02/01/1999", "20,15", "financeiro");
-			Funcionario fun5 = FuncionarioFactory.createFuncionario("andressa", "23/08/1999", "25,15", "Adm");
-			Funcionario fun6 = FuncionarioFactory.createFuncionario("carlos", "22/03/1999", "2,15", "Adm");
-			Funcionario fun7 = FuncionarioFactory.createFuncionario("jose", "22/09/1999", "215,15", "Adm");
+			Funcionario fun = FuncionarioFactory.createFuncionario("Maria", "18/10/2000", "2009.44", "Operador");
+			Funcionario fun1 = FuncionarioFactory.createFuncionario("João", "12/05/1990", "2284.38", "Operador");
+			Funcionario fun2 = FuncionarioFactory.createFuncionario("Caio", "02/05/1961", "9836.14", "Coordenador");
+			Funcionario fun3 = FuncionarioFactory.createFuncionario("Miguel", "14/10/1988", "19119.88", "Diretor");
+			Funcionario fun4 = FuncionarioFactory.createFuncionario("Alice", "05/01/1995", "2234.68", "Recepcionista");
+			Funcionario fun5 = FuncionarioFactory.createFuncionario("Heitor", "19/11/1999", "1582.72", "Operador");
+			Funcionario fun6 = FuncionarioFactory.createFuncionario("Arthur", "31/03/1993", "4071.84", "Contador");
+			Funcionario fun7 = FuncionarioFactory.createFuncionario("Laura", "08/07/1994", "3017.45", "Gerente");
+			Funcionario fun8 = FuncionarioFactory.createFuncionario("Heloísa", "24/05/2003", "1606.85", "Eletricista");
+			Funcionario fun9 = FuncionarioFactory.createFuncionario("Helena", "02/09/1996", "2799.93", "Gerente");
 			
 			service.inserirNaLista(fun);
 			service.inserirNaLista(fun1);
@@ -61,6 +63,8 @@ public class Main {
 			service.inserirNaLista(fun5);
 			service.inserirNaLista(fun6);
 			service.inserirNaLista(fun7);
+			service.inserirNaLista(fun8);
+			service.inserirNaLista(fun9);
 			
 			service.delete("João");
 			System.out.println("-------------------------------------------------------");
